@@ -2,6 +2,7 @@
 # Build settings
 markdown: kramdown
 permalink: pretty
+baseurl: http://tjonathan.github.io/BClassy
 
 port: 3000
 
