@@ -407,7 +407,7 @@ header .smedia_container {
     opacity: 0.8; }
 
 #home {
-  background: url(../assets/img/home-bg.jpg);
+  background: url(assets/img/home-bg.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -508,7 +508,7 @@ header .smedia_container {
 /*------------About Section-------------- */
 #about {
   position: relative;
-  background: url(../assets/img/about-bg.jpg);
+  background: url(assets/img/about-bg.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -694,7 +694,7 @@ footer {
       font-weight: 200;
       font-family: "LuloCleanW01-OneBold", sans-serif;
       font-size: 40px;
-      background: url(../assets/img/women-bg.jpg) center center;
+      background: url(assets/img/women-bg.jpg) center center;
       opacity: 0.6;
       transition: opacity 0.2s ease-in, color 0.2s ease-in-out; }
       #main-shop .flex--center a.women-flex:hover, #main-shop .flex--center a.women-flex:active {
@@ -710,7 +710,7 @@ footer {
       font-weight: 200;
       font-family: "LuloCleanW01-OneBold", sans-serif;
       font-size: 40px;
-      background: url(../assets/img/men-bg.jpg) center center;
+      background: url(assets/img/men-bg.jpg) center center;
       opacity: 0.6;
       transition: opacity 0.2s ease-in, color 0.2s ease-in-out; }
       #main-shop .flex--center a.men-flex:hover, #main-shop .flex--center a.men-flex:active {
