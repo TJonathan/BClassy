@@ -1,0 +1,54 @@
+.title
+  position: absolute
+  display: block
+  width: 200px
+  text-transform: uppercase
+  left: 200px
+  letter-spacing: -5px
+  font:
+    size: 60px
+    family: "LuloCleanW01-OneBold", sans-serif
+  color: $goldish
+  opacity: 0
+  transform: translateX(-20px)
+  transition: all 0.6s ease-in-out
+  &.is-showing
+    opacity: 1
+    transform: translateX(0px)
+  span
+    color: black
+#about-us
+  background-color: $bg_color
+  padding: 20px
+
+  .about-usbg
+    display: block
+    margin: 0 auto
+    margin-bottom: 50px
+
+  aside
+    font-family: "Century Gothic", sans-serif
+    margin-left: 210px
+    display: flex
+    .col-1
+      text-align: center
+      width: 350px
+
+    .col-2
+      margin-top: 30px
+      width: 500px
+
+  #team
+    display: flex
+    margin-left: 220px
+    width: 800px
+    font-family: "Century Gothic", sans-serif
+    padding: 80px 0
+    text-align: center
+    img
+      +size(170px)
+    .col-1,.col-2,.col-3
+      flex-direction: column
+      margin: 20px
+      h4
+        font-size: 1em

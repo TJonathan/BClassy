@@ -1,0 +1,94 @@
+header
+  #logo
+    height: 75px
+    width: 170px
+    float: left
+    margin: 10px 0 0 60px
+
+  #Layer_1
+    height: 75px
+    width: 170px
+    opacity: 0.55
+  nav
+    float: right
+    position: relative
+    top: 30px
+    right: 180px
+    a
+      position: relative
+      margin-right: 10px
+      height: 45px
+      line-height: 45px
+      display: inline-block
+      outline: none
+      color: #fff
+      text-decoration: none
+      text-transform: uppercase
+      letter-spacing: 1px
+      font:
+        size: 14px
+        weight: normal
+        family: "LuloCleanW01-OneBold", sans-serif
+      opacity: 0.55
+      padding: 0px 10px
+      text-shadow: none
+      -webkit-transition: color 0.3s
+      -moz-transition: color 0.3s
+      transition: color 0.3s
+    .in-use
+      pointer-events: none
+      color: $goldish
+    a::before,a::after
+      position: absolute
+      left: 0
+      width: 100%
+      height: 2px
+      background: #fff
+      content: ''
+      opacity: 0
+      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s
+      -moz-transition: opacity 0.3s, -moz-transform 0.3s
+      transition: opacity 0.3s, transform 0.3s
+      -webkit-transform: translateY(-10px)
+      -moz-transform: translateY(-10px)
+      transform: translateY(-10px)
+    a::before
+      top: 0
+      -webkit-transform: translateY(-10px)
+      -moz-transform: translateY(-10px)
+      transform: translateY(-10px)
+    a::after
+      bottom: 0
+      -webkit-transform: translateY(10px)
+      -moz-transform: translateY(10px)
+      transform: translateY(10px)
+
+    a:hover::before,a:hover::after,
+    a:focus::before,a:focus::after
+      opacity: 1
+      -webkit-transform: translateY(0px)
+      -moz-transform: translateY(0px)
+      transform: translateY(0px)
+    a:hover,a:focus
+      color: $goldish
+  //Social media
+  .smedia_container
+    display: block
+    width: 60px
+    padding: 30px 0
+    position: absolute
+    z-index: 50
+
+    .smedia_position
+      position: fixed
+      top: 260px
+      transform: translateX(1270px)
+      bottom: 30px
+      display: flex
+      flex-direction: column
+
+    .media_logo
+      height: 40px
+      width: 40px
+      margin-bottom: 15px
+      opacity: 0.8

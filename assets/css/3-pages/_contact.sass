@@ -1,0 +1,128 @@
+#contact-page
+  background-color: $bg-color
+  padding: 20px
+
+  .contact-bg
+    display: block
+    margin: 0 auto
+
+  #description
+    display: flex
+    margin-left: 220px
+    font-family: "Century Gothic", sans-serif
+    padding: 80px 0
+
+    .col-1,.col-2,.col-3
+      flex-direction: column
+    .col-1
+      padding-right: 20px
+    .col-2
+      max-width: 410px
+    .col-3
+      margin-top: 30px
+      width: 230px
+      height: 300px
+    p
+      margin: 0
+
+  //Contact Message
+  .newsletter
+    clear: both
+    margin: 12px 0
+    p
+      color: #333
+      font:
+        size: 18px
+        family: "Century Gothic", sans-serif
+    input,textarea
+      background: none
+      border: solid 2px $goldish
+      color: #333
+      padding: 5px 30px 40px
+      font-size: 18px
+      display: inline-block
+
+      &:focus,&:active
+        outline: none
+
+      &[type="name"]
+        border: none
+        border-bottom: solid 2px $goldish
+        width: 180px
+
+      &[type="email"]
+        border: none
+        border-bottom: solid 2px $goldish
+        width: 180px
+
+      &[type="submit"]
+        display: block
+        border-radius: 0px
+        border-color: black
+        font:
+          family: "Century Gothic", sans-serif
+          size: 16px
+          weight: normal
+        color: #333
+        +transition
+        &:hover,&:active
+          box-shadow: 2px 3px 4px black
+    .input-group
+      display: inline-block
+      margin-right: 20px
+      position: relative
+
+      input
+        padding: 12px 0px
+      textarea
+        border: none
+        border-bottom: solid 2px $goldish
+        margin-top: 30px
+        width: 320px
+        height: 40px
+
+      textarea:focus + label,
+      textarea.has-value + label
+        top: 20px
+        font-size: 12px
+        color: #aaa
+  //FAQ
+#faq
+  width: 70%
+  margin: 0 auto
+  color: black
+  .arrowdwn
+    float: right
+    font-weight: bold
+    font-size: 1.2em
+  .row
+    margin: 0
+
+  .articles
+    margin-top: 30px
+    margin-bottom: 30px
+
+  .article
+    border: none
+    border-spacing: 2px
+    font-family: "Century Gothic",sans-serif
+    border-bottom: 1px $goldish solid
+
+  .item
+    cursor: pointer
+    padding-top: 7px
+    padding-bottom: 7px
+
+  .item .question
+    font:
+      weight: bold
+      size: 1.2em
+
+  .description
+    display: none
+    padding-top: 10px
+    padding-bottom: 10px
+    +transition
+
+    &.open
+      display: block

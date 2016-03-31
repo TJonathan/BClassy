@@ -1,0 +1,43 @@
+#main-shop
+  background-color: black
+
+  .flex--center
+    display: flex
+    justify-content: center
+    width: 100%
+    overflow: hidden
+
+    a.women-flex
+      width: 50%
+      height: 650px
+      left: 0px
+      color: white
+      text-align: center
+      font:
+        weight: 200
+        family: "LuloCleanW01-OneBold", sans-serif
+        size: 40px
+      background: url(/assets/img/women-bg.jpg) center center
+      opacity: 0.6
+      transition: opacity 0.2s ease-in,color 0.2s ease-in-out
+      &:hover,&:active
+        opacity: 1
+        transition: opacity 0.2s ease-in,color 0.2s ease-in-out
+        color: black
+    a.men-flex
+      width: 50%
+      height: 650px
+      right: 0px
+      color: white
+      text-align: center
+      font:
+        weight: 200
+        family: "LuloCleanW01-OneBold", sans-serif
+        size: 40px
+      background: url(/assets/img/men-bg.jpg) center center
+      opacity: 0.6
+      transition: opacity 0.2s ease-in,color 0.2s ease-in-out
+      &:hover,&:active
+        opacity: 1
+        transition: opacity 0.2s ease-in,color 0.2s ease-in-out
+        color: black

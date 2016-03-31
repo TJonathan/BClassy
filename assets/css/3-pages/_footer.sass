@@ -1,0 +1,92 @@
+footer
+  background-color: black
+  height: 250px
+
+  nav
+    padding-left: 180px
+    padding-top: 50px
+    float: left
+    ul
+      margin: 0px
+      list-style: none
+      font:
+        family: Ebrima, sans-serif
+        size: 20px
+      width: 150px
+      li
+        color: #666
+        text-decoration: underline
+        display: inline-block
+        +transition
+        &:hover,&:active
+          color: white
+    #uparrow
+      margin-top: 20px
+      background-color: #333
+      border-radius: 15px
+
+/*Newsletter*/
+.newsletter
+  float: right
+  margin-right: 180px
+  margin-top: 50px
+  p
+    color: white
+    font:
+      size: 18px
+      family: "Century Gothic", sans-serif
+  input
+    background: none
+    border: solid 2px $goldish
+    color: white
+    padding: 5px 30px 40px
+    font-size: 18px
+    display: inline-block
+
+    &:focus,&:active
+      outline: none
+
+    &[type="email"]
+      border: none
+      border-bottom: solid 2px $goldish
+      width: 250px
+
+    &[type="submit"]
+      border-radius: 0px
+      border-color: white
+      font:
+        family: "Century Gothic", sans-serif
+        size: 16px
+        weight: normal
+      color: white
+      +transition
+      &:hover,&:active
+        color: black
+        background: white
+  .input-group
+    display: inline-block
+    margin-right: 20px
+    position: relative
+
+    input
+      padding: 12px 0px
+
+    label
+      +position(absolute, 50% null null 0px)
+      +transform(translateY(-50%))
+      font:
+        family: "Century Gothic", sans-serif
+        style: italic
+        size: 18px
+      color: #999
+      pointer-events: none
+      +transition
+
+    input:focus + label,
+    input.has-value + label
+      top: -10px
+      font-size: 12px
+      color: #aaa
+
+  #copy
+    padding-top: 20px
